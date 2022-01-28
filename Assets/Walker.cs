@@ -31,7 +31,7 @@ public class Walker : MonoBehaviour
     {
         if (Api.IsTriggerPressed)
         {
-            Instantiate(bullet, (transform.position + Vector3.forward * 3f), Quaternion.identity);
+            Instantiate(bullet, (transform.position + transform.forward * 3f), Quaternion.identity);
         }
     }
 
